@@ -36,7 +36,7 @@ async function addButton() {
   <Extensions>
   <Version>1.8</Version>
   <Panel>
-    <Order>2</Order>
+    <Order>1</Order>
     <PanelId>${PANEL_ID}</PanelId>
     <Type>Home</Type>
     <Icon>Custom</Icon>
