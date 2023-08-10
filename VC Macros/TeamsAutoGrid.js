@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import xapi from 'xapi';
 
 // Global Parameters
