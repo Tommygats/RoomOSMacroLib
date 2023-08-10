@@ -47,8 +47,6 @@ async function sendDTMF(code, message) {
 }
 // Init function - Listen for Calls and check if matches VIMT Uri
 function init() {
-  // Remove lingering Button during init.
-  removePanel();
   // Reset Call Status to false
 
   xapi.Event.OutgoingCallIndication.on(async () => {

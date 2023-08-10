@@ -10,8 +10,8 @@ const debugMode = false; // Enable debug logging
 // ----- EDIT BELOW THIS LINE AT OWN RISK ----- //
 
 const vimtDomain = '@m.webex.com';
-const panelId = 'vimtToggle';
-const messageTitle = 'VIMT Experience';
+const panelId = 'HideNonVid';
+const messageTitle = 'Hide Non-Video Participants';
 let vimtSetup = false;
 let vimtActive = false;
 
