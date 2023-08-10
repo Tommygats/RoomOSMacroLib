@@ -2,11 +2,8 @@
 import xapi from 'xapi';
 
 // Global Parameters
-const gridDefault = true; // Define Grid View Default option
 const hideNonVideo = true; // Hide Non-Video Participants by default
 const addNonVideoButton = true; // Adds option during meeting to toggle non-video participants
-const showMessage = true; // Briefly show message for VIMT Optimizations
-const messageTimeout = 5; // Message timeout in Seconds
 const silentDtmf = true; // Change to false if you want to hear the DTMF Feedback tones;
 const debugMode = false; // Enable debug logging
 
@@ -153,16 +150,6 @@ function init() {
     // Pause 1 second just to be sure
     await sleep(1000);
     const messageText = [];
-    // Grid Default
-    if (gridDefault) {
-      try {
-        await xapi.Command.Video.Layout.SetLayout({ LayoutName: 'Grid' });
-        messageText.push('Grid View Layout Enabled');
-      } catch (error) {
-        console.error('Unable to set Grid');
-        console.debug(error);
-      }
-    }
     // Hide Non-Video Participants
     if (hideNonVideo) {
       try {
@@ -180,19 +167,6 @@ function init() {
         messageText.push('Non-Video Toggle added to Controls');
       } catch (error) {
         console.error('Unable to add Panel');
-        console.debug(error);
-      }
-    }
-    // Display VIMT Message
-    if (showMessage && messageText.length > 0) {
-      try {
-        xapi.Command.UserInterface.Message.Alert.Display({
-          Title: messageTitle,
-          Text: messageText.join('<br>'),
-          Duration: messageTimeout,
-        });
-      } catch (error) {
-        console.error('Unable to display Alert message');
         console.debug(error);
       }
     }
