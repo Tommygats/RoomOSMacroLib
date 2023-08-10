@@ -1,3 +1,5 @@
+import xapi from 'xapi';
+
 const VIMT_TENANT = '460393446' // Customer VIMT Tenant
 const WEBEX_DOMAIN = '@t.plcm.vc' // VIMT Webex Domain
 const SHOW_BUTTON = true; // Display Teams button on Device

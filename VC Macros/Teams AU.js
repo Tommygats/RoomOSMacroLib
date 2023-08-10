@@ -1,3 +1,5 @@
+import xapi from 'xapi';
+
 const VIMT_TENANT = 'oneconference' // Customer VIMT Tenant
 const WEBEX_DOMAIN = '@m.webex.com' // VIMT Webex Domain
 const SHOW_BUTTON = true; // Display Teams button on Device
