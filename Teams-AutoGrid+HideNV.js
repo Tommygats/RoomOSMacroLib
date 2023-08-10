@@ -1,18 +1,3 @@
-/* eslint-disable no-console */
-/*
-# VIMT Experience Macro
-# Written by Jeremy Willans
-# https://github.com/jeremywillans/roomos-macros
-# Version: 1.0
-#
-# USE AT OWN RISK, MACRO NOT FULLY TESTED NOR SUPPLIED WITH ANY GUARANTEE
-#
-# Usage - Update VIMT Meeting experience with Grid View and Hiding Non-Video Participants by Default
-#
-# Change History
-# 1.0 20230228 Initial Release
-#
-*/
 // eslint-disable-next-line import/no-unresolved
 import xapi from 'xapi';
 
