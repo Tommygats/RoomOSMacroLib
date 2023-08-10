@@ -1,18 +1,3 @@
-/*
-# MS Teams Macro Button
-# Written by Jeremy Willans
-# https://github.com/jeremywillans/roomos-macros
-# Version: 1.0
-#
-# USE AT OWN RISK, MACRO NOT FULLY TESTED NOR SUPPLIED WITH ANY GUARANTEE
-#
-# Usage - Adds a button on the UI allowing to join MS Teams VIMT (CVI) Meetings
-#
-# Change History
-# 1.0 20220623 Initial Release
-#
-*/
-
 const VIMT_TENANT = '460393446' // Customer VIMT Tenant
 const WEBEX_DOMAIN = '@t.plcm.vc' // VIMT Webex Domain
 const SHOW_BUTTON = true; // Display Teams button on Device
